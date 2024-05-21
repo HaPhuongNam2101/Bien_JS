@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b"><br><br>
+    <button onclick="getAdd()">Cộng </button>
+    <button onclick="getMinus()">Trừ</button>
+    <button onclick=" getMultiply()">Nhân </button>
+    <button onclick="getDivision()">Chia</button>
+    <p id="result"></p>
+    <script>
+        function getAdd() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            document.getElementById("result").innerHTML = "Kết quả phép cộng là: " + (a + b);
+        };
+        function getMinus() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            document.getElementById("result").innerHTML = "Kết quả phép trừ là: " + (a - b);
+
+        };
+        function getMultiply() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            document.getElementById("result").innerHTML = "Kết quả phép nhân là: " + (a * b);
+        }
+        function getDivision() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            document.getElementById("result").innerHTML = "Kết quả phép chia là: " + (a / b);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

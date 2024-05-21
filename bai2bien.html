@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Độ c" id="c">
+    <button onclick=" getchuyenDoi()">Chuyển Đổi</button>
+    <p id="result"></p>
+    <script>
+        function getchuyenDoi() {
+            let C = +document.getElementById("c").value;
+            let F = 9 * C / 5 + 32;
+            document.getElementById("result").innerHTML = " Kết quả chuyển đổi " + F;
+        };
+    </script>
+</body>
+
+</html>

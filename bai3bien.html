@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Bán kính" id="a">
+    <button onclick="chuVi()">Chu vi hình tròn</button>
+    <p id="result"></p>
+    <script>
+        function chuVi() {
+            let a = +document.getElementById("a").value;
+            const PI = 3.14;
+            let b = 2 * PI * a;
+            document.getElementById("result").innerText = "Chu vi hình tròn " + b;
+
+        }
+    </script>
+</body>
+
+</html>
